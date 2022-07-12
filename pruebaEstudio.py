@@ -2,7 +2,7 @@ import csv, json
 from ctypes.wintypes import PINT
 
 
-leyendoJSON = open('C:/Users/USUARIO/Downloads/ARCHIVOS/pruebaEstudio.json','r')
+leyendoJSON = open('C:/Users/User/Desktop/sistemaControladorNominaWEB-CAM/pruebaEstudio.json','r')
 content  = leyendoJSON.read()
 dict_entities = json.loads(content)
 
@@ -16,11 +16,11 @@ lista_nomina =[]
 lista_porcentaje=[]
 lista_dolares_a_pesos =[]
 
-with open('C:/Users/USUARIO/Downloads/ARCHIVOS/baseDatos.csv','r',newline='') as archivo:
+with open('C:/Users/User/Desktop/sistemaControladorNominaWEB-CAM/baseDatos.csv','r',newline='') as archivo:
         archivo_entrada = csv.reader(archivo, delimiter=';')         
         
             #print(chaturbate)
-        with open ('C:/Users/USUARIO/Downloads/ARCHIVOS/nomina.csv','w',newline='') as archivo:
+        with open ('C:/Users/User/Desktop/sistemaControladorNominaWEB-CAM/nomina.csv','w',newline='') as archivo:
             archivo_salida = csv.writer(archivo, delimiter=';')            
             #creaamos encabezado 
             archivo_salida.writerow(['CEDULA','NOMBRE','MODALIDAD','NICKNAME','TOKEN_CHATURBATE','TOKEN_A_DOLAR','PORCENTAJE','DOLAR_A_PESOS'])
@@ -81,7 +81,7 @@ with open('C:/Users/USUARIO/Downloads/ARCHIVOS/baseDatos.csv','r',newline='') as
             
             
             
-        print("........................")
+        print("hola pinchao")
         
       
         
